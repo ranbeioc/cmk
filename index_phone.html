@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-itunes-app" content="app-id=504498659">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="漫画控-科学看漫画神器,漫派-动漫展会赶场神器">
+    <meta name="author" content="漫画控,comikon,漫派,comicpi,动漫,漫画,ACG,漫画阅读器,展会,漫展">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.jpg" />
+
+    <title>漫画控 - Comikon</title>
+
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="https://cdn.bootcss.com/Swiper/3.2.7/css/swiper.min.css" rel="stylesheet">
+
+    <style type="text/css">
+    html,body{position:relative;height:100%}
+    body{background:#eee;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;color:#000;margin:0;padding:0}
+    .swiper-container{width:100%;height:100%;margin-left:auto;margin-right:auto}
+    .swiper-slide{text-align:center;font-size:28px;color:#fff;background:#fff;background-position:center;background-size:cover;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;text-shadow:0 5px 10px rgba(0,0,0,.5)}
+    .cmk_slogo{position:absolute;z-index:100;top:25%;left:40%;width:80px;height:80px;border-radius:50%;background-color:rgba(255,255,255,.15);padding:5px;box-shadow:0 5px 10px rgba(0,0,0,.5)}
+    </style>
+
+  </head>
+
+  <body>
+
+      <div id="cmkBgs" class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(img/bg_2.jpg)">
+                千万人的等待<br>我匍匐前进
+              </div>
+              <div class="swiper-slide" style="background-image:url(img/bg_1.jpg)">
+                千百夜的期待<br>我不曾停留
+              </div>
+              <div class="swiper-slide" style="background-image:url(img/bg_5.jpg);background-position:right;">
+                却发现「妳」<br>始终「无可替代」
+              </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-white"></div>
+      </div>
+
+      <img class="cmk_slogo" src="img/comikon_logo_s.png">
+    
+    <script src="https://cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.2.7/js/swiper.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var _pad = (/pad/ig).test(navigator.userAgent),
+            _phone = (/MOBILE/ig).test(navigator.userAgent);
+        if(_pad || (_pad == false && _phone == false)){
+            _pad = true;
+            _phone = false;
+        };
+
+        if(!_phone){
+            window.location.href = 'index.html';
+        }
+
+        function setbg(){
+            var _w = window.innerWidth, _h = window.innerHeight;
+            $('#cmkBgs').css({
+              'width': _w,
+              'height': _h
+            });
+            $('img.cmk_slogo').css({
+              'top': (_h/2 - 160) + 'px',
+              'left': (_w/2 - 40) + 'px'
+            }).click(function(){
+              window.location = 'http://a.app.qq.com/o/simple.jsp?pkgname=net.comikon.reader';
+            });
+        };
+        setbg();
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: '.swiper-pagination',
+            //nextButton: '.swiper-button-next',
+            //prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            effect: 'fade',
+            slidesPerView: 1,
+            paginationClickable: true,
+            keyboardControl: true,
+            mousewheelControl: true,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: 2500,
+            preloadImages: true,
+            lazyLoadingOnTransitionStart: true,
+            autoplayDisableOnInteraction: false,
+            lazyLoadingInPrevNext: true,
+            updateOnImagesReady: true
+        });
+
+        function hengshuping(){
+            if(window.orientation==180||window.orientation==0){
+                //alert("竖屏！");
+            };
+            if(window.orientation==90||window.orientation==-90){
+                //alert("横屏！");
+            };
+            setTimeout(function(){ setbg(); swiper.onResize(); }, 300);
+        };
+        hengshuping();
+
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+        $(window).resize(function() {
+          setbg();
+          swiper.onResize();
+        });
+    });
+
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2009fcc9cedc45dc20d1489eadbf7214";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+html{font-family: "微软雅黑","Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); margin: 0; padding: 0;}
+img{border: none;}
+
+a { color: /*#08c*/#cc3300;white-space:nowrap; }
+a:link, a:visited, a:active { text-decoration: none;white-space:nowrap; }
+a:hover { text-decoration: none; cursor: pointer; }
+a.block { display: block; cursor: pointer; }
+
+.shadowbox{background-color:#fff;}
+.boxShadow{background-color:#fff; border-bottom: 3px solid #ddd;}
+.shadowbox2{background-color:#fff;}
+.footer{background-color:#ddd;}
+.indexPageOuter3{background-color:#333;}
+
+#slides{position: relative;z-index: 100;width: 960px;height: 290px; background-color: transparent;}
+
+.indexPagePart{background-color: #fff; border: 1px solid #ddd; float: left; width:960px; clear: both;}
+
+.comiclist li{float: left; margin: 10px 0 10px 10px!important; padding: 5px 10px 10px 10px!important; border:none;}
+.indexPageOuter ul{
+margin-left:180px\0;/* ie 8/9*/
+margin-left:180px\9\0;/* ie 9*/
+*margin-left:180px;/* ie 7*/
+_margin-left:100px;/* ie 6*/
+}
+
+.loginuser{ float: left; clear: both; margin: 15px 0 15px 0px; padding-left: 50px;
+width:normal\0;/* ie 8/9*/
+width:normal\9\0;/* ie 9*/
+*width:85%;/* ie 7*/
+_width:85%;/* ie 6*/}
+.baseInput{border: 1px solid #999;}
+.loginInput{border: 1px solid #999;}
+
+.mrgTop2, .mrgTop{margin-left: 0!important;}
+.mrgBtn{
+margin-left:90px\0;/* ie 8/9*/
+margin-left:90px\9\0;/* ie 9*/
+*margin-left:90px;/* ie 7*/
+_margin-left:10px;/* ie 6*/
+}
+.mrgBtn{margin-left: 50px!important;margin-left:25px;/* ie 6*/}
+
+.pagePartwidth{width:468px;}
+#loginForm{ 
+margin: 80px 0 0 250px;\0;/* ie 8/9*/
+margin: 80px 0 0 250px;\9\0;/* ie 9*/
+*margin: 80px 0 0 250px;;/* ie 7*/
+_margin: 80px 0 0 150px;;/* ie 6*/}

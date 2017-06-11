@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* RESET */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption { font-size: 1em; font-weight: normal; font-style: normal; }
+fieldset,iframe { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
+
+/* LAYOUT */
+html { overflow-x: hidden!important; background:#eee url(../img/noc.jpg) repeat fixed; }
+
+img { border: 0; }
+
+.content,
+.rounded { border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; }
+
+.shadow { -moz-box-shadow:0 0 3px 2px rgba(0,0,0,.1);-webkit-box-shadow:0 0 3px 2px rgba(0,0,0,.1);box-shadow:0 0 3px 2px rgba(0,0,0,.1); }
+img.shadow { padding: 5px; background: rgba(255,255,255,.3); margin-bottom: 2px; *border: 1px solid #e2e2e2; _position: relative; }
+
+/* TYPE */
+body { font: 12px/18px Arial, Helvetica, sans-serif, Verdana; background-color: transparent; color: #333; -webkit-font-smoothing: antialiased; }
+
+a { color: /*#08c*/#cc3300; }
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { text-decoration: underline; cursor: pointer; }
+a.block { display: block; cursor: pointer; }
+a.block span,
+a.block em { color:#08c; cursor: pointer; }
+a.block:hover { text-decoration: none; }
+a.block:hover span,
+a.block:hover em { color: #08c; text-decoration: underline; }
+
+h1,h2,h3,h4,h5,h6,strong { color:#000; }
+h1,h2,h3,h4 { font-weight: bold; }
+h2,h3,h4 { line-height: 18px; }
+h1,h2 { margin-bottom: 18px; }
+h1 { font-size: 24px; line-height: 36px; }
+h2 { font-size: 16px; }
+h3 { font-size: 1em; }
+h4 { font-size: 10px; }
+p { margin-bottom: 18px; }
+p.intro { color: #888; font-size: 16px; line-height: 22px; font-weight: normal; }
+.more { text-align: right; }
+
+ul { list-style: none outside; }
+ol { margin-bottom: 18px; list-style: decimal; margin-left: 2.2em; }
+ul.square,
+ul.circle { margin-left: 2em; margin-bottom: 18px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul ul.circle,
+ul ul.square { margin-top: 4px; margin-bottom: 5px; }
+ol.sosumi { margin-left: 0; padding-left: 2em; *padding-left: 2.2em; }
+
+
+
+#pageMain{width:890px;margin: 0 auto 0 auto;}
+#pageHead{padding: 10px;height:15px; border-bottom: 2px solid #f1f1f1;}
+#headtools{float: left;}
+#headusers{float: right;}
+#pageSearch{text-align: center;}
+#seaLogo{padding: 20px;float: left;cursor: pointer;}
+#seaLogo h1{font-size: 48px;padding: 0px; margin: 0px;color: #000;text-shadow:2px 2px 2px #999;cursor: pointer;}
+#seaLogo h1 sup{font-size: 16px; padding: 0px 0px 0px 10px; margin: 0px; color: #999;}
+#seaLogo h3{font-size: 14px;padding: 0px; margin: 12px 0px 0px 0px;color: #999;}
+#searchArea{float: left;margin: 50px 0 0 30px;}
+#seaPart{padding: 0px 0px 20px 20px; margin: 0px 0px 25px 0px;}
+#searchKeyword{padding: 5px;width: 400px;font-size: 18px; border: 1px solid #999;border-top: 2px solid #999;border-left: 2px solid #999;float: left;box-shadow:3px 3px 3px #f1f1f1;}
+#searchButton{width:90px;height:34px;font-size: 18px;border: 1px solid #999;border-left: none;float: left; background-color: #fff;box-shadow:3px 3px 3px #f1f1f1;cursor: pointer;}
+#seaType, #hotKeys{padding-left:20px;}
+#seaType li,  #hotKeys li{float: left;margin-right:10px;margin-bottom: 8px;}
+#seaType li a{font-size:14px; margin-right: 10px;}
+#hotKeys li a{color: #333; white-space:nowrap;}
+#seaHots{width: 80%;margin:0px 0px 0px 0px;padding: 0px 0px 10px 0;background-color: rgba(255,255,255,.1);float: left;}
+#seaHots0{width: 70%;margin:0px 0px 0px 80px;padding: 0px 0px 10px 0;background-color: rgba(255,255,255,.1);float: left;}
+#pageArwLeft, #pageArwRight{float: left;width: 91px;}
+#navtop{padding: 3px; margin-top: 30px;height:20px;}
+#navtop h3, #bottompage h3{font-size: 16px;float: left; padding-left: 90px;padding-left: 90px !important; *padding-left: 100px; padding-right: 20px; color:#999;}
+#navtop div, #bottompage div{float: right;padding:0 105px 10px 0;}
+#navtop a, #bottompage a{font-size: 14px;}
+#bottompage{margin: 0;padding: 0;}
+#bottompage span, #navtop span{font-size: 14px;color: #999;}
+#comms{font-size: 16px;}
+#comms label{display: block;padding: 5px; color: #000;}
+#seaFavor li{padding: 10px;margin: 10px;border: 1px solid #DDD;-moz-box-shadow:0 0 5px 2px rgba(0,0,0,.15);-webkit-box-shadow:0 0 5px 2px rgba(0,0,0,.15);box-shadow:0 0 5px 2px rgba(0,0,0,.15);text-align: left;float: left;width: 95%; background-color: rgba(255,255,255,.5);}
+#seaFavor img{border:none; width:100px;height:140px;margin-right: 15px; box-shadow: 2px 2px 2px #f1f1f1;}
+#pagetools{text-align: center;float: left;width:100%;}
+#pagetools h3{font-size: 16px; color:#999;margin: 50px 0px 15px 100px;text-align: left;}
+#pagetools ul{margin: 0px 0px 0px 95px;}
+#pagetools li{float: left;width: 180px;height: 70px;border: 1px solid #f1f1f1;margin: 0px 12px 10px 0px;box-shadow:2px 2px 2px #f1f1f1;cursor: pointer;}
+#pageFooter{text-align: left; float: left; width:100%; margin: 40px 0px 0px 0px; border-top: 2px solid #f1f1f1; padding: 15px 0px 0px 0px;}
+#footinfo{padding-left: 10px; line-height: 1.8; float: left; padding-bottom: 10px;}
+#footlink{float: right;}
+#footlink a{margin-left: 10px;}
+#footnum{float: right;padding-right: 10px; font-size: 18px; text-align: right; line-height: 2;}
+.pagevs{float: left;}.pageds{float: left; width:58%; border-right: 1px solid #DDD; padding-right:15px;}
+.pageds p{padding: 0px;margin: 0px 0px 5px 0px;font-size: 14px;}
+.pagergt{float: right;width: 130px; height: auto; padding-left: 15px; font-size:12px; color: #666;}
+.pagergt h3{margin-top: 155px;}
+.stdlinks{width:25%; float:left; text-align:right; padding: 5px;font-size:14px;}
+.stdepds{padding:5px 5px 5px 10px; float: left;}
+.speadtim{padding:5px;}
+.dscs{font-size:14px;color:#666; padding:5px!important;}
+a.pagetlt{font-size: 20px;font-weight: bold;display: block;margin-bottom: 10px;}
+a.pagetlt:hover { text-decoration: none; color: #ffaa00; }
+.ios{background: #fff url(../img/manufacturers.png) no-repeat 10px 0px;/* -150 */}
+.and{background: #fff url(../img/manufacturers.png) no-repeat -185px 0px;}
+.wp7{background: #fff url(../img/manufacturers.png) no-repeat -5px -70px;/* -220 */}
+.syb{background: #fff url(../img/manufacturers.png) no-repeat -385px -70px;}
+a.hot { color: red; }
+a.hot:hover { text-decoration: underline; color: #08c; }
+a.del { color: red; float: right; display: none;}
+a.del:hover { text-decoration: underline; color: #ffaa00; }
+
+.comikonAds{float: left; width:780px; border: 1px solid #eee; padding: 10px 0 10px 15px; margin-left: 75px; text-align:center;}
+.comikonAds img{float: left;}
+.comikonAds h1{padding:10px 0 0 20px; margin:0; float: left; font-size: 38px; *font-size: 36px; color: #999; line-height:1;}
+a.ads { color: #ffaa00; }
+a.ads:hover { text-decoration: none; color: #cc3300; }
+
+#pageArmsL{background:transparent url(../img/nav_paddles.png) no-repeat 0 0; width:65px; height:100px; position: fixed; top:200px; left: 0px; cursor: pointer;}
+#pageArmsR{background:transparent url(../img/nav_paddles.png) no-repeat top right; width:65px; height:100px; position: fixed; top:200px; right:0px; cursor: pointer;}
+/* Back to top button */
+#back-top {position: fixed;bottom: 0;right: 20px;}
+#back-top a {width: 48px;display: block;text-align: center;font: 12px/100% Arial, Helvetica, sans-serif;text-transform: uppercase;text-decoration: none;color: #bbb;/* background color transition */-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;}
+#back-top a:hover {color: #000;}
+/* arrow icon (span tag) */
+#back-top span {width: 48px;height: 48px;display: block;margin-bottom: 7px;background: #ddd url(../img/up-arrow.png) no-repeat center center;/* rounded corners */-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;/* background color transition */-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;}
+#back-top a:hover span {background-color: #777;}
+
+.cmkwtf{margin-top: 50px;}
+.cmkwtf a{color: #666; }

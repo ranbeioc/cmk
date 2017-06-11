@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="漫画控-科学看漫画神器,漫派-动漫展会赶场神器">
+    <meta name="author" content="漫画控,comikon,漫派,comicpi,动漫,漫画,ACG,漫画阅读器,展会,漫展">
+    <meta name="baidu-site-verification" content="XQbxgS9oVW" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.jpg" />
+
+    <title>漫画控 - Comikon</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="https://cdn.bootcss.com/Swiper/3.2.7/css/swiper.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/cmk_style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+    var _pad = (/pad/ig).test(navigator.userAgent),
+        _phone = (/MOBILE/ig).test(navigator.userAgent),
+        _ios = (/ios/ig).test(navigator.userAgent),
+        _and = (/Android/ig).test(navigator.userAgent),
+        _pc = !_phone;
+    if(_pad || (_pad == false && _phone == false)){
+        _phone = false;
+    };
+
+    if(_phone){
+        window.location.href = 'index_phone.html';
+    }
+    if(window != top){ top.location.href = location.href };
+    </script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0)">Oriental<br><span class="cmktlt">Comics</span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="javascript:void(0)">为国漫更好的未来努力！</a></li>
+            <!--li class="active"><a href="#comikon" data-toggle="tooltip" data-placement="bottom" title="「即将上线」<br>科学看漫画神器">漫画控</a></li>
+            <li><a href="#comicpi" data-toggle="tooltip" data-placement="bottom" title="「即将上线」<br>漫展专业指南">漫派</a></li-->
+            <!--li><a href="javascript:void(0)" data-toggle="modal" data-target=".cmk-md-sc">搜索&nbsp;<sup>Beta</sup></a></li-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="cmkup" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target=".cmk-md-ac" title="「即将上线」<br>直接将原创作品呈献给千万漫画控忠实用户"><!--  data-toggle="tooltip" data-placement="bottom"  -->
+                <i class="fa fa-cloud-upload"></i>&nbsp;发布作品<span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="cmkBgs" class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-lazy" data-background="img/bg_2.jpg">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                千万人的等待 / 我匍匐前进
+              </div>
+              <div class="swiper-slide swiper-lazy" data-background="img/bg_1.jpg">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                千百夜的期待 / 我不曾停留
+              </div>
+              <div class="swiper-slide swiper-lazy" data-background="img/bg_5.jpg">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                却发现「妳」始终「无可替代」
+              </div>
+              <div class="swiper-slide swiper-lazy" data-background="img/bg_7.jpg">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                全新「4.0」即将为你「涅槃」归来
+              </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+
+      <img class="cmk_slogo" src="img/comikon_logo_s.png">
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3">
+            <h4>关注我们</h4>
+            <div class="row cmkrow">
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="javascript:void(0)" data-toggle="popover" title="「QQ群：218596577」<br>@漫画控Comikon后援会" data-content='<img class="cmkQQ" src="img/cmk_qq.jpg">'><i class="fa fa-qq fa-2x"></i></a></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="javascript:void(0)" data-toggle="popover" title="「官方微信」<br>@Comikon漫画控" data-content='<img src="img/cmk_wx_qrcode.png">'><i class="fa fa-weixin fa-2x"></i></a></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="http://weibo.com/comikon" title="「官方微博」<br>@漫画控Comikon-科学看漫画神器" data-toggle="tooltip" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="http://twitter.com/comikonapp" title="「Twitter」<br>@comikonapp" data-toggle="tooltip" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></div>
+            </div>
+            <div class="row cmkrow">
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="http://facebook.com/comikonapp" title="「Facebook」<br>@comikonapp" data-toggle="tooltip" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="http://b.comikon.net" title="「官方博客」<br>b.comikon.net" data-toggle="tooltip" target="_blank"><i class="fa fa-wordpress fa-2x"></i></a></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="http://tieba.baidu.com/f?ie=utf-8&kw=%E6%BC%AB%E7%94%BB%E6%8E%A7&fr=search#" title="「百度贴吧」<br>@漫画控吧" data-toggle="tooltip" target="_blank"><i class="fa fa-paw fa-2x"></i></a></div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" href="mailto:support@comikon.net?subject=意见反馈&body=欢迎您提出任何意见和建议" data-toggle="popover" title="「微信扫描名片」<br>点击发邮件至：<br>support@comikon.net" data-content='<img class="cmkQQ" style="width:200px;height:200px;" src="img/cmk_ctc.jpg">'><i class="fa fa-envelope-o fa-2x"></i></a></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <h4>客户端下载</h4>
+            <div class="row cmkrow">
+              <div class="col-xs-6 col-sm-3"><img class="icon" src="img/comikon_logo.jpg" data-toggle="popover" title="扫描下载「漫画控」" data-content='<img src="img/comikon_dl.png">'></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" data-toggle="tooltip" title="「漫画控」<br>iPhone & iPad通用版" target="_blank" href="https://itunes.apple.com/cn/app/man-hua-kong/id504498659"><i class="fa fa-apple fa-2x"></i></a></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" data-toggle="tooltip" title="「漫画控」<br>Android版" target="_blank" href="http://www.wandoujia.com/apps/net.comikon.reader"><i class="fa fa-android fa-2x"></i></a></div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" data-toggle="tooltip" title="「漫画控」<br>GooglePlay版" target="_blank" href="https://play.google.com/store/apps/details?id=net.comikon.view"><i class="fa fa-google fa-2x"></i></a></div>
+            </div>
+            <div class="row cmkrow">
+              <div class="col-xs-6 col-sm-3"><img class="icon" src="img/comicpi_logo.jpeg" data-toggle="popover" title="扫描下载「漫派」" data-content='<img src="img/comicpi_dl.png">'></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" data-toggle="tooltip" title="「漫派」<br>iPhone版" target="_blank" href="https://itunes.apple.com/us/app/man-pai/id836483247"><i class="fa fa-apple fa-2x"></i></a></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" data-toggle="tooltip" title="「漫派」<br>Android版" target="_blank" href="http://www.wandoujia.com/apps/com.orientalcomics.comicpi"><i class="fa fa-android fa-2x"></i></a></div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-xs-6 col-sm-3"><a class="cmk" data-toggle="tooltip" title="「漫派」<br>GooglePlay版" target="_blank" href="https://play.google.com/store/apps/details?id=com.orientalcomics.comicpi"><i class="fa fa-google fa-2x"></i></a></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <h4>服务与支持</h4>
+            <div class="row cmkrow cmklist">
+              <div class="col-xs-6 col-sm-6"><a class="cmk" data-toggle="modal" data-target=".cmk-md-ctn" href="javascript:void(0)">内容合作</a></div>
+              <div class="col-xs-6 col-sm-6">
+                <a class="cmk" data-toggle="modal" data-target=".cmk-md-bsn" href="javascript:void(0)">商务推广</a>
+              </div>
+            </div>
+            <div class="row cmkrow cmklist">
+              <div class="col-xs-6 col-sm-6">
+                <!--a class="cmk" data-toggle="tooltip" title="「即将发布」<br>支持动漫创作者计划" href="javascript:void(0)">原创投放</a-->
+                <a class="cmk" data-toggle="modal" data-target=".cmk-md-ac" href="javascript:void(0)">原创计划</a>
+              </div>
+              <div class="col-xs-6 col-sm-6"><a class="cmk" data-toggle="modal" data-target=".cmk-md-ctc" href="javascript:void(0)">联系我们</a></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <h4>了解更多</h4>
+            <div class="row cmkrow cmklist">
+              <div class="col-xs-6 col-sm-6"><a class="cmk" data-toggle="modal" data-target=".cmk-md-join" href="javascript:void(0)">加入我们</a></div>
+              <div class="col-xs-6 col-sm-6"><a class="cmk" href="http://bbs.comikon.net" data-toggle="tooltip" title="「官方论坛」<br>bbs.comikon.net" target="_blank">用户论坛</a></div>
+            </div>
+            <div class="row cmkrow cmklist">
+              <div class="col-xs-12 col-sm-12 cmkbeta"><a class="cmk" href="javascript:void(0)"><span>测试版：</span><span data-toggle="popover" title="「QQ群：222987832」<br>@漫画控iOS内测群" data-content='<img class="cmkQQ" src="img/cmk_ios_beta.jpg">'><i class="fa fa-apple"></i> iOS</span>&nbsp;&nbsp;<span data-toggle="popover" title="「QQ群：220470859」<br>@漫画控安卓内测群" data-content='<img class="cmkQQ" src="img/cmk_android_beta.jpg">'><i class="fa fa-android"></i> 安卓</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-sm-10">
+            <span class="text-muted">&copy; 2016 Oriental Comics, LLC. 版权所有 <!--ICP备12345678号-1--> &nbsp;&nbsp;</span>
+            <a data-toggle="modal" data-target=".cmk-md-notes" href="javascript:void(0)">用户协议和免责声明</a>
+          </div>
+          <div class="col-xs-2 col-sm-2" style="text-align:right;">
+            <div class="cmkply">
+              <iframe id="cmkply" style="display:none;" frameborder="no" border="0" marginwidth="0" marginheight="0" width="260" height="52" src="http://music.163.com/outchain/player?type=2&id=1943000&auto=1&height=32"></iframe>
+              <div><i class="fa fa-music fa-spin" data-toggle="tooltip" title="「背景音乐」<br>Transformers: Prime"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <img id="cmk_close" src="img/close.png">
+
+    <!--div class="modal fade cmk-md-sc" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-search"></i> 在线搜索&nbsp;<sup>Beta</sup></h4>
+          </div>
+          <div class="modal-body" style="margin:0; padding:0; overflow:hidden;">
+              <iframe id="cmksc" frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" src="*.html" scrolling="yes"></iframe>
+          </div>
+        </div>
+      </div>
+    </div-->
+
+    <div class="modal fade cmk-md-ctn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-cogs"></i> 内容合作</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="cmkwall">
+                  <h1>我们的内容授权合作伙伴</h1>
+                  <h4>将优质作品呈献给千万动漫用户<br>在资深动漫爱好者中有口皆碑</h4>
+                </div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/c/zbjt.jpg"></div>
+              <div class="cmkwr"><h3>中版集团</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/c/fh.jpg"></div>
+              <div class="cmkwr"><h3>锋绘漫画</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/c/ctsm.jpg"></div>
+              <div class="cmkwr"><h3>楚天尚漫</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/c/mywh.jpg"></div>
+              <div class="cmkwr"><h3>漫友文化</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/c/jlms.jpg"></div>
+              <div class="cmkwr"><h3>吉林美术出版社</h3></div>
+            </div>
+            <div class="row">
+              <div class="cmkwall"><h3>【内容和版权合作请联系以下邮件】</h3><a href="mailto:copyrights@comikon.net?subject=内容合作&body=欢迎合作！" data-toggle="tooltip" title="点击直接写邮件">copyrights#comikon.net</a><br><span class="csp">（请将‘#’换成‘@’）</span></div>
+              <div class="cmkwall"><h3>【原创稿件请投递至以下邮件】</h3><a href="mailto:yangshuo@orientalcomics.com?subject=原创投稿&body=欢迎投稿！" data-toggle="tooltip" title="点击直接写邮件">contents#orientalcomics.com</a><br><span class="csp">（请将‘#’换成‘@’）</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade cmk-md-ac" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-paint-brush"></i> 原创计划 - 即将发布</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="cmkwall">
+                <p class="gbli"><img src="img/Ghibli.png"></p>
+                <div class="cmkwall" style="color:#fff!important;">
+                  <h1>漫画控鼎力支持原创国漫！</h1>
+                  <h4>漫画控将为原创作者提供更自由，更开放，更活跃的互动平台</h4>
+                </div>
+                <blockquote>
+                  <p>一条路不能回头，就是一生要走许多路，有成长之路。 很多事情不能自己掌控，即使再孤单再寂寞，仍要继续走下去，不许停也不能回头。</p>
+                  <footer class="bkt">于 2001 年 <cite title="Source Title">《千与千寻》</cite></footer>
+                </blockquote>
+                <blockquote>
+                  <p>多年后，再回想这样的迷茫或许连执著的原因都记不得了，青春就是让你张扬的笑，也给你莫名的痛。</p>
+                  <footer class="bkt">于 2011 年 <cite title="Source Title">《虞美人盛开的山坡》</cite></footer>
+                </blockquote>
+                <blockquote>
+                  <p>带上信仰，去寻找属于你自己的国吧！哪怕倾尽一生。</p>
+                  <footer class="bkt">于 1984 年 <cite title="Source Title">《风之谷》</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade cmk-md-ctc" id="cmkctc" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-phone"></i> 联系我们</h4>
+          </div>
+          <div class="modal-body">
+              <div id="allmap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade cmk-md-bsn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-gamepad"></i> 商务合作</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="cmkwall">
+                <h1>我们的商务合作伙伴</h1>
+                <h4>将优质产品呈献给千万动漫用户<br>让您的产品在千万动漫爱好者中有口皆碑</h4>
+              </div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/g/bx.jpg"></div>
+              <div class="cmkwr"><h3>暴雪游戏</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/g/sd.jpg"></div>
+              <div class="cmkwr"><h3>盛大游戏</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/g/tx.jpg"></div>
+              <div class="cmkwr"><h3>腾讯游戏</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/g/wy.jpg"></div>
+              <div class="cmkwr"><h3>网易游戏</h3></div>
+            </div>
+            <div class="row cmkmd">
+              <div class="cmkwl"><img src="img/logo/g/cy.jpg"></div>
+              <div class="cmkwr"><h3>搜狐畅游</h3></div>
+            </div>
+            <div class="row">
+              <div class="cmkwall"><h3>【商务合作请联系以下邮件】</h3><a href="mailto:xuxia@orientalcomics.com?subject=商务合作&body=欢迎！" data-toggle="tooltip" title="点击直接写邮件">business#orientalcomics.com</a><br><span class="csp">（请将‘#’换成‘@’）</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade cmk-md-join" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-steam"></i> 加入我们</h4>
+          </div>
+          <div class="modal-body">
+          <h3>【我们在寻找】</h3>
+          iOS、Web前端工程师<br>
+          Python 后端工程师<br>
+          Django & DjangoRestFramework<br>
+          数据建模 & RESTful API<br>
+          个性化推荐引擎<br>
+          NoSQL与大数据<br>
+          持续集成<br>
+          自动化运维
+          <h3>【我们的主要产品】</h3>
+          我们致力于提供是iOS和Android平台上最优秀的动漫社区应用而努力，我们的愿景是为消费者提供发现的乐趣，为创作者提供再创作的动力。目前我们的产品已经聚集了千万级的用户，但仅仅是打了一个基础，我们有一个关于明天的梦，相信我们可以让动漫爱好者不再孤单，更期待你与我们一起实现。
+          <h3>【我们为你提供】</h3>
+          弹性工作时间、个人电脑补贴计划、额外的24英寸显示器、舒适的红点设计获奖工作椅、额外的商业医疗保险。
+          <h3>【我们使用】</h3>
+          你可能已经熟悉的Github、Gmail，提供专属VPN，使用任务协作平台与Wiki进行团队协作和积累，我们引导自己站在行业和技术的前沿工作，尽量使每一份努力都可以沉淀。
+          <h3>【我们希望你】</h3>
+          耐心，细致，和我们一样，热爱写代码，对技术喜欢刨根问底，知道并不断学习正确的做事方法，看见IOS这样的拼写会想给他改成iOS，分得清HTTP Code 401和403的使用场景，必要的时候，知道去哪里获取系统或权威的信息，而不是在网上随便搜个答案就采用，我们希望你已经习惯使用Mac电脑，要是多少还有点文艺那就更靠谱了。<br>
+          商业和人生一样，我们的团队期待着与自己Mr. Right和Ms. Right的奇遇。
+          <h3>【我们寻求】</h3>
+          iOS、Web、Python前后端开发工程师多名
+          <h3>【职位需求】</h3>
+          <h4>﹛ 通用需求 ﹜</h4>
+          掌握REST API交互开发，理解和前后端开发相关的HTTP协议规范<br>
+          能够写出高性能、高可维护性的“优美”的代码<br>
+          注重利用合理的设计模式和模块化的组织方式对代码进行架构<br>
+          具备英文语言资源的查阅能力和习惯<br>
+          <h4>﹛ 对于iOS前端工程师 ﹜</h4>
+          熟练掌握Objective-C、CoreData、Cocoa Touch<br>
+          熟悉多线程，网络编程和常用设计模式<br>
+          对数据结构、基本算法熟练掌握<br>
+          <h4>﹛ 对于Web前端工程师 ﹜</h4>
+          熟练掌握Javascript/HTML/CSS，理解W3C标准<br>
+          具备HTML5/CSS3及手机浏览器上的开发经验<br>
+          <h4>﹛ 对于后端工程师 ﹜</h4>
+          熟练掌握Python语言<br>
+          并在以下任一方向有深入的思考与应用实践：<br>
+          Django&DjangoRestFramework<br>
+          数据建模&RESTful API<br>
+          个性化推荐引擎<br>
+          NoSQL与大数据<br>
+          持续集成<br>
+          自动化运维
+          <h3>【期待与你相识】</h3>
+          你可以用任何方式介绍自己，比如，附上过去引以为豪的一个创造。 如果你愿意，请发简历的同时附上豆瓣或新浪微博ID以及生活照，将有助于我们更快速、全面的认识你。
+          <h3>【联系请发送至以下邮箱】</h3>
+          <a href="mailto:hr@orientalcomics.com?subject=加入漫画控&body=欢迎！" data-toggle="tooltip" title="点击直接写邮件">hr#orientalcomics.com</a>
+          <br><span class="csp">（请将‘#’换成‘@’）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade cmk-md-notes" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><i class="fa fa-users"></i> 用户协议</h4>
+          </div>
+          <div class="modal-body" style="margin:0; padding:0; overflow:hidden;">
+              <iframe id="cmksc2" frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" src="agreement.html" scrolling="yes"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8wTfuHC0ETG8dDlph5GUr8id"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        function setbg(){
+            var _w = window.innerWidth, _h = window.innerHeight;
+            $('#cmkBgs').css({
+              'width': _w,
+              'height': _h
+            });
+            $('img.cmk_slogo').css({
+              'top': (_h/2 - 180) + 'px',
+              'left': (_w/2 - 60) + 'px'
+            });
+            $('.modal-body, #allmap').css({
+              'height': (_h - 320) + 'px'
+            });
+            $('.modal').modal('handleUpdate');
+            $('#cmk_close').css({
+              'right': ((window.innerWidth - $('.modal:visible .modal-content').width())/2 - 50) + 'px'
+            });
+            if(_pad){
+              $('.cmk-md-sc .modal-body, .cmk-md-notes .modal-body').css({
+                'overflow-x':'hidden',
+                'overflow-y':'auto'
+              });
+            };
+        };
+        setbg();
+
+        $('[data-toggle="tooltip"]').tooltip({
+          html: true
+        });
+        $('[data-toggle="popover"]').popover({
+          placement: 'top',
+          html: true,
+          trigger: 'hover'
+        });
+        $('.modal').on('shown.bs.modal', function (e) {
+          var _m = $(this), _c = $('#cmk_close');
+          _c.on('click', function(){
+            _m.modal('hide');
+          });
+          _c.css({
+            'top': '61px',
+            'right': ((window.innerWidth - $(this).find('.modal-content').width())/2 - 50) + 'px'
+          });
+          _c.show();
+        });
+        $('.modal').on('hide.bs.modal', function (e) {
+          $('#cmk_close').hide();
+        });
+
+        $('#cmkctc').on('shown.bs.modal', function (e) {
+          setmap();
+        });
+        $('a').bind('focus',function() {
+          if(this.blur) {this.blur()};
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            effect: 'fade',
+            slidesPerView: 1,
+            paginationClickable: true,
+            keyboardControl: true,
+            mousewheelControl: true,
+            loop: true,
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+            lazyLoadingOnTransitionStart: true,
+            preloadImages: true,
+            lazyLoading: true
+        });
+
+        function setmap(){
+            
+            var sContent =
+            "<div style='width:420px;'><h4 style='margin:0 0 5px 0;padding:0.2em 0'>Oriental Comics 联系方式</h4>" + 
+            "<img style='float:right;' id='cmkcts' src='img/cmk_ctc.jpg' width='200' height='200' data-toggle=’tooltip‘ title='「即将发布」<br>扫描获取联系方式'/>" + 
+            "<p style='margin:7px 0;line-height:1.5;font-size:14px;'>座机：400 052 0908<br>&nbsp;QQ： 800 102 250<br>服务：support@comikon.net<br>授权：copyrights@comikon.net<br>商务：xuxia@orientalcomics.com<br>微信：@Comikon漫画控<br>微博：<a href='http://weibo.com/comikon' target='_blank'>@漫画控Comikon</a><br>博客：<a href='http://b.comikon.net' target='_blank'>b.comikon.net</a></p>" + 
+            "<p style='color:#999; font-size:12px; margin:0; padding:0px;'>使用微信扫描二维码，直接添加联系人</p></div>";
+            var myIcon = new BMap.Icon("img/map_icon2.gif", new BMap.Size(80,70));
+            var map = new BMap.Map("allmap", {enableMapClick:false});
+            var point = new BMap.Point(114.423514,30.559118);
+            var marker = new BMap.Marker(point,{icon:myIcon});
+            map.addOverlay(marker);
+            map.centerAndZoom(point, 15);
+            map.disableScrollWheelZoom();
+            map.disableDoubleClickZoom();
+            map.enableKeyboard();
+            //map.setCenter(point);
+            //map.panTo(point);
+            map.panBy(0, 140);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            var infoWindow = new BMap.InfoWindow(sContent);
+            marker.addEventListener("click", function(){          
+               this.openInfoWindow(infoWindow);
+               document.getElementById('cmkcts').onload = function (){
+                 infoWindow.redraw();
+               }
+            });
+            marker.openInfoWindow(infoWindow);
+
+            map.addEventListener("tilesloaded",function(){
+              $('div.anchorBL').hide();
+            });
+        };
+
+        function hengshuping(){
+            if(window.orientation==180||window.orientation==0){
+                //alert("竖屏！");
+                //$('.swiper-slide').css('padding-top','50%');
+            };
+            if(window.orientation==90||window.orientation==-90){
+                //alert("横屏！");
+                //$('.swiper-slide').css('padding-top','25%');
+            }
+            if(_and){
+              setTimeout(function(){ setbg(); swiper.onResize(); }, 100);
+            };
+        };
+        hengshuping();
+
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+
+        $(window).resize(function() {
+          setbg();
+          swiper.onResize();
+        });
+
+    });
+
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2009fcc9cedc45dc20d1489eadbf7214";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  </body>
+</html>
